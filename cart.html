@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFRICAGAMER</title>
+    <link rel="stylesheet" type="text/css" href="../style.css" media="screen" />
+    <link
+      href="https://fonts.gooogleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="../images/logo.png.jpg" width="200px" height="50px" />
+          </div>
+          <nav>
+            <ul id="menuItem">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../blog.html">Blog</a></li>
+              <li><a href="../products.html">Products</a></li>
+              <li><a href="../contact.html ">Contact</a></li>
+              <li><a href="../account.html">Account</a></li>
+              
+            </ul>
+            <a href="./cart.html"><img src="../images/cart.png" alt="#"></a>
+            <img class="menu-icon"
+              src="../images/menu.png"
+              onclick="menutoggle()"
+            />
+          </nav>
+        </div>
+      </div>
+
+      <div class="shopping-cart">
+        <!-- Title -->
+        <div class="title">
+          Shopping cart
+        </div>
+       
+        <!-- Product #1 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+       
+          <div class="image">
+            <img src="../images/msigp661.jpg" alt="" />
+          </div>
+       
+          <div class="description">
+            <span>MSI GP66</span>
+            <span>Leopard</span>
+            <span>10UG-008UK</span>
+          </div>
+       
+          <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+              <img src="../images/plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="1">
+            <button class="minus-btn" type="button" name="button">
+              <img src="../images/minus.svg" alt="" />
+            </button>
+          </div>
+       
+          <div class="total-price">Ksh 50,000</div>
+        </div>
+       
+        <!-- Product #2 -->
+        <div class="item">
+          <div class="buttons">
+            <span class="delete-btn"></span>
+            <span class="like-btn"></span>
+          </div>
+       
+          <div class="image">
+            <img src="../images/msigp661.jpg" alt=""/>
+          </div>
+       
+          <div class="description">
+            <span>MSI GP66</span>
+            <span>Leopard </span>
+            <span>10UG-008UK</span>
+          </div>
+       
+          <div class="quantity">
+            <button class="plus-btn" type="button" name="button">
+              <img src="../images/plus.svg" alt="" />
+            </button>
+            <input type="text" name="name" value="2">
+            <button class="minus-btn" type="button" name="button">
+              <img src="../images/minus.svg" alt="" />
+            </button>
+          </div>
+       
+          <div class="total-price">Ksh 50,000</div>
+        </div>
+        </div>
+      </div>
+      <!--footer-->
+      <div class="footer">
+        <form action="action_page.php">
+            <div class="container" style="background-color: black;">
+              <img src="../images/logo.png.jpg" alt="#" width="200" height="50">
+          <h2 style="color: red; font-size: larger" >Subscribe to our Newsletter</h2>
+          <p>Don't miss the latest news on gaming machines  </p>
+        </div>
+
+        <div class="container" style="background-color: rgb(7, 0, 0)">
+          <input type="text" placeholder="Email address" name="mail" required />
+        </div>
+
+        <div class="container" style="background-color: black;">
+          <input type="submit" value="Subscribe" />
+        </div>
+      </form>
+      <hr />
+      <p class="copyright">Copyright @2021-AfricaGamer</p>
+    </div>
+    <!--js for menu-->
+    <script>
+        var menuItems= document.getElementById("menuItems");
+
+        menuItems.style.maxHeight="0px";
+        function menutoggle(){
+          if(menuItems.style.maxHeight == "0px")
+          {menuItems.style.maxHeight = "200px"}
+        
+        else{
+          menuItems.style.maxHeight = "0px"
+        }
+      }
+    </script>
+  </body>
+</html>
